@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ce1002.Final.s107502531.controllers.GameOverController">
+  <children>
+    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
+         <children>
+            <ImageView fx:id="_fire" fitHeight="864.0" fitWidth="1536.0">
+               <image>
+                  <Image url="@../resource/gameOver.gif" />
+               </image>
+            </ImageView>
+            <Label fx:id="_claim" alignment="CENTER" layoutX="503.0" layoutY="663.0" prefHeight="108.0" prefWidth="593.0" text="1P     Winner">
+               <font>
+                  <Font name="Berlin Sans FB Demi Bold" size="93.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="_role1" fitHeight="200.0" fitWidth="200.0" layoutX="129.0" layoutY="610.0" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@../resource/role_1_win.gif" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="_role2" fitHeight="236.0" fitWidth="156.0" layoutX="78.0" layoutY="29.0" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@../resource/role_2_win.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="_role3" fitHeight="178.0" fitWidth="245.0" layoutX="210.0" layoutY="210.0" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@../resource/role_3_win.gif" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="_role4" fitHeight="161.0" fitWidth="275.0" layoutX="1188.0" layoutY="630.0" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@../resource/role_4_win.gif" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="_role5" fitHeight="148.0" fitWidth="227.0" layoutX="29.0" layoutY="462.0" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@../resource/role_5_win.jpg" />
+               </image>
+            </ImageView>
+            <Button layoutX="1299.0" layoutY="208.0" mnemonicParsing="false" onAction="#onPlayAgainPressed" onKeyPressed="#onPlayAgainPressedEnter" prefHeight="114.0" prefWidth="186.0" text="PLAY AGAIN">
+               <font>
+                  <Font name="Berlin Sans FB Demi Bold" size="25.0" />
+               </font>
+            </Button>
+            <Button layoutX="1299.0" layoutY="405.0" mnemonicParsing="false" onAction="#onExitPressed" onKeyPressed="#onExitPressedEnter" prefHeight="114.0" prefWidth="186.0" text="SUCK GAME">
+               <font>
+                  <Font name="Berlin Sans FB Demi Bold" size="25.0" />
+               </font>
+            </Button>
+         </children>
+    </AnchorPane>
+  </children>
+</VBox>

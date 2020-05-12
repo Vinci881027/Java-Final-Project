@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ce1002.Final.s107502531.controllers.MainController">
+  <children>
+    <AnchorPane VBox.vgrow="ALWAYS">
+         <children>
+            <ImageView fitHeight="864.0" fitWidth="1536.0">
+               <image>
+                  <Image url="@../resource/start.png" />
+               </image>
+            </ImageView>
+            <Button layoutX="142.0" layoutY="616.0" mnemonicParsing="false" onAction="#onKOPressed" onKeyPressed="#onKOPressedEnter" prefHeight="60.0" prefWidth="210.0" text="K.O.賽">
+               <font>
+                  <Font name="Berlin Sans FB Demi Bold" size="25.0" />
+               </font>
+            </Button>
+            <Button layoutX="1229.0" layoutY="676.0" mnemonicParsing="false" onAction="#onExitPressed" onKeyPressed="#onExitPressedEnter" prefHeight="114.0" prefWidth="179.0" text="EXIT">
+               <font>
+                  <Font name="Berlin Sans FB Demi Bold" size="25.0" />
+               </font>
+            </Button>
+            <Button layoutX="142.0" layoutY="697.0" mnemonicParsing="false" onAction="#on60SecPressed" onKeyPressed="#on60SecPressedEnter" prefHeight="60.0" prefWidth="210.0" text="60秒計時賽">
+               <font>
+                  <Font name="Berlin Sans FB Demi Bold" size="25.0" />
+               </font>
+            </Button>
+            <Button layoutX="142.0" layoutY="774.0" mnemonicParsing="false" onAction="#onBossPressed" onKeyPressed="#onBossPressedEnter" prefHeight="60.0" prefWidth="210.0" text="雙人挑戰BOSS">
+               <font>
+                  <Font name="Berlin Sans FB Demi Bold" size="25.0" />
+               </font>
+            </Button>
+         </children>
+    </AnchorPane>
+  </children>
+</VBox>

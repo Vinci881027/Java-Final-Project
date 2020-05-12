@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Point3D?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.GaussianBlur?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ce1002.Final.s107502531.controllers.BossController">
+  <children>
+    <AnchorPane fx:id="_field" maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
+         <children>
+            <ImageView fx:id="_scene" fitHeight="864.0" fitWidth="1536.0" layoutY="-14.0">
+               <image>
+                  <Image url="@../resource/PlayScene.jpg" />
+               </image>
+            </ImageView>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#7ba11bcc" height="20.0" layoutX="440.0" layoutY="680.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#7ba11bcc" height="20.0" layoutX="880.0" layoutY="680.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#7ba11bcc" height="20.0" layoutX="220.0" layoutY="520.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#7ba11bcc" height="20.0" layoutX="660.0" layoutY="520.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#7ba11bcc" height="20.0" layoutX="1100.0" layoutY="520.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
+            <ImageView fx:id="_boss" fitHeight="200.0" fitWidth="84.0" layoutX="718.0" layoutY="323.0" preserveRatio="true">
+               <image>
+                  <Image url="@../resource/boss.png" />
+               </image>
+               <rotationAxis>
+                  <Point3D y="1.0" />
+               </rotationAxis>
+            </ImageView>
+            <ImageView fx:id="_role1" fitHeight="106.0" fitWidth="83.0" layoutX="50.0" layoutY="742.0" preserveRatio="true" translateZ="1.0">
+               <image>
+                  <Image url="@../resource/role_1.png" />
+               </image>
+               <rotationAxis>
+                  <Point3D y="1.0" />
+               </rotationAxis>
+            </ImageView>
+            <ImageView fx:id="_role2" fitHeight="106.0" fitWidth="73.0" layoutX="172.0" layoutY="742.0" preserveRatio="true">
+               <image>
+                  <Image url="@../resource/role_2.png" />
+               </image>
+               <rotationAxis>
+                  <Point3D y="1.0" />
+               </rotationAxis>
+            </ImageView>
+            <ImageView fx:id="_role3" fitHeight="106.0" fitWidth="100.0" layoutX="294.0" layoutY="742.0" preserveRatio="true">
+               <image>
+                  <Image url="@../resource/role_3.png" />
+               </image>
+               <rotationAxis>
+                  <Point3D y="1.0" />
+               </rotationAxis>
+            </ImageView>
+            <ImageView fx:id="_role4" fitHeight="106.0" fitWidth="89.0" layoutX="417.0" layoutY="742.0" preserveRatio="true">
+               <image>
+                  <Image url="@../resource/role_4.png" />
+               </image>
+               <rotationAxis>
+                  <Point3D y="1.0" />
+               </rotationAxis>
+            </ImageView>
+            <ImageView fx:id="_role5" fitHeight="106.0" fitWidth="56.0" layoutX="548.0" layoutY="742.0" preserveRatio="true">
+               <image>
+                  <Image url="@../resource/role_5.png" />
+               </image>
+               <rotationAxis>
+                  <Point3D y="1.0" />
+               </rotationAxis>
+            </ImageView>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#63500f" height="15.0" layoutY="848.0" stroke="BLACK" strokeType="INSIDE" width="1536.0" />
+            <ImageView fx:id="_laser" fitHeight="24.0" fitWidth="158.0" layoutX="283.0" layoutY="313.0" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@../resource/laser.png" />
+               </image>
+               <effect>
+                  <GaussianBlur radius="4.0" />
+               </effect>
+            </ImageView>
+            <ImageView fx:id="_weapon1" fitHeight="24.0" fitWidth="33.0" layoutX="133.0" layoutY="225.0" preserveRatio="true">
+               <image>
+                  <Image url="@../resource/weapon_1.png" />
+               </image>
+               <rotationAxis>
+                  <Point3D y="1.0" />
+               </rotationAxis>
+            </ImageView>
+            <ImageView fx:id="_weapon2" fitHeight="24.0" fitWidth="51.0" layoutX="230.0" layoutY="225.0" preserveRatio="true">
+               <image>
+                  <Image url="@../resource/weapon_2.png" />
+               </image>
+               <rotationAxis>
+                  <Point3D y="1.0" />
+               </rotationAxis>
+            </ImageView>
+            <ImageView fx:id="_weapon3" fitHeight="53.0" fitWidth="33.0" layoutX="330.0" layoutY="211.0" preserveRatio="true">
+               <image>
+                  <Image url="@../resource/weapon_3.png" />
+               </image>
+               <rotationAxis>
+                  <Point3D y="1.0" />
+               </rotationAxis>
+            </ImageView>
+            <ImageView fx:id="_weapon4" fitHeight="35.0" fitWidth="29.0" layoutX="411.0" layoutY="222.0" preserveRatio="true">
+               <image>
+                  <Image url="@../resource/weapon_4.png" />
+               </image>
+               <rotationAxis>
+                  <Point3D y="1.0" />
+               </rotationAxis>
+            </ImageView>
+            <ImageView fx:id="_weapon5" fitHeight="35.0" fitWidth="37.0" layoutX="501.0" layoutY="220.0" preserveRatio="true">
+               <image>
+                  <Image url="@../resource/weapon_5.png" />
+               </image>
+               <rotationAxis>
+                  <Point3D y="1.0" />
+               </rotationAxis>
+            </ImageView>
+            <Text fill="YELLOW" layoutX="286.0" layoutY="96.0" stroke="BLACK" strokeType="OUTSIDE" strokeWidth="3.0" text="1P" textAlignment="CENTER" wrappingWidth="111.23798370361328">
+               <font>
+                  <Font name="Berlin Sans FB Demi Bold" size="72.0" />
+               </font>
+            </Text>
+            <Rectangle fx:id="_bloodRec1P" arcHeight="5.0" arcWidth="5.0" fill="#ac1515" height="46.0" layoutX="14.0" layoutY="14.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="267.0" />
+            <Rectangle fx:id="_flashRec1P" arcHeight="5.0" arcWidth="5.0" fill="#2121a4" height="46.0" layoutX="14.0" layoutY="79.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="267.0" />
+            <Label fx:id="_bloodNUM1P" layoutX="294.0" layoutY="15.0" prefHeight="15.0" prefWidth="48.0" text="100" visible="false">
+               <font>
+                  <Font name="Agency FB" size="36.0" />
+               </font>
+            </Label>
+            <Label fx:id="_magicNUM1P" layoutX="294.0" layoutY="79.0" prefHeight="44.0" prefWidth="48.0" text="100" visible="false">
+               <font>
+                  <Font name="Agency FB" size="36.0" />
+               </font>
+            </Label>
+            <Rectangle fx:id="_bloodRec2P" arcHeight="5.0" arcWidth="5.0" fill="#ac1515" height="46.0" layoutX="1254.0" layoutY="14.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="267.0" />
+            <Rectangle fx:id="_flashRec2P" arcHeight="5.0" arcWidth="5.0" fill="#2121a4" height="46.0" layoutX="1254.0" layoutY="79.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="267.0" />
+            <Label fx:id="_bloodNUM2P" layoutX="1207.0" layoutY="15.0" prefHeight="15.0" prefWidth="48.0" text="100" visible="false">
+               <font>
+                  <Font name="Agency FB" size="36.0" />
+               </font>
+            </Label>
+            <Label fx:id="_magicNUM2P" layoutX="1207.0" layoutY="79.0" prefHeight="44.0" prefWidth="48.0" text="100" visible="false">
+               <font>
+                  <Font name="Agency FB" size="36.0" />
+               </font>
+            </Label>
+            <Rectangle fx:id="_bossBlood1" arcHeight="5.0" arcWidth="5.0" fill="#ac1515" height="46.0" layoutX="634.0" layoutY="13.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="267.0" />
+            <Rectangle fx:id="_bossBlood2" arcHeight="5.0" arcWidth="5.0" fill="#641010" height="46.0" layoutX="634.0" layoutY="80.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="267.0" />
+            <Line endX="190.79998779296875" endY="7.62939453125E-6" layoutX="90.0" layoutY="79.0" startX="-75.39996337890625" startY="7.62939453125E-6" strokeWidth="3.0" />
+            <Line endX="100.0" endY="-18.20000457763672" layoutX="181.0" layoutY="143.0" startX="100.0" startY="-63.400001525878906" strokeWidth="3.0" />
+            <Line endX="190.79998779296875" endY="7.62939453125E-6" layoutX="90.0" layoutY="126.0" startX="-77.19999694824219" startY="7.62939453125E-6" strokeWidth="3.0" />
+            <Line endX="99.99998474121094" endY="-15.799995422363281" layoutX="-88.0" layoutY="143.0" startX="100.0" startY="-63.400001525878906" strokeWidth="3.0" />
+            <Line endX="190.79998779296875" endY="7.62939453125E-6" layoutX="90.0" layoutY="13.0" startX="-75.39996337890625" startY="7.62939453125E-6" strokeWidth="3.0" />
+            <Line endX="190.79998779296875" endY="7.62939453125E-6" layoutX="90.0" layoutY="59.0" startX="-77.19999694824219" startY="7.62939453125E-6" strokeWidth="3.0" />
+            <Line endX="99.99998474121094" endY="-15.799995422363281" layoutX="-87.0" layoutY="76.0" startX="100.0" startY="-63.400001525878906" strokeWidth="3.0" />
+            <Line endX="100.0" endY="-18.20000457763672" layoutX="181.0" layoutY="77.0" startX="100.0" startY="-63.400001525878906" strokeWidth="3.0" />
+            <Line endX="100.0" endY="-18.20000457763672" layoutX="1422.0" layoutY="77.0" startX="100.0" startY="-63.400001525878906" strokeWidth="3.0" />
+            <Line endX="100.0" endY="-18.20000457763672" layoutX="1421.0" layoutY="142.0" startX="100.0" startY="-63.400001525878906" strokeWidth="3.0" />
+            <Line endX="99.99998474121094" endY="-15.799995422363281" layoutX="1154.0" layoutY="76.0" startX="100.0" startY="-63.400001525878906" strokeWidth="3.0" />
+            <Line endX="99.99998474121094" endY="-15.799995422363281" layoutX="1153.0" layoutY="142.0" startX="100.0" startY="-63.400001525878906" strokeWidth="3.0" />
+            <Line endX="190.79998779296875" endY="7.62939453125E-6" layoutX="1330.0" layoutY="79.0" startX="-75.39996337890625" startY="7.62939453125E-6" strokeWidth="3.0" />
+            <Line endX="190.79998779296875" endY="7.62939453125E-6" layoutX="1330.0" layoutY="12.0" startX="-75.39996337890625" startY="7.62939453125E-6" strokeWidth="3.0" />
+            <Line endX="190.79998779296875" endY="7.62939453125E-6" layoutX="1330.0" layoutY="60.0" startX="-77.19999694824219" startY="7.62939453125E-6" strokeWidth="3.0" />
+            <Line endX="190.79998779296875" endY="7.62939453125E-6" layoutX="1331.0" layoutY="125.0" startX="-77.19999694824219" startY="7.62939453125E-6" strokeWidth="3.0" />
+            <Line endX="99.99998474121094" endY="-15.799995422363281" layoutX="533.0" layoutY="76.0" startX="100.0" startY="-63.400001525878906" strokeWidth="3.0" />
+            <Line endX="99.99998474121094" endY="-15.799995422363281" layoutX="533.0" layoutY="142.0" startX="100.0" startY="-63.400001525878906" strokeWidth="3.0" />
+            <Line endX="190.79998779296875" endY="7.62939453125E-6" layoutX="710.0" layoutY="12.0" startX="-75.39996337890625" startY="7.62939453125E-6" strokeWidth="3.0" />
+            <Line endX="190.79998779296875" endY="7.62939453125E-6" layoutX="710.0" layoutY="79.0" startX="-75.39996337890625" startY="7.62939453125E-6" strokeWidth="3.0" />
+            <Line endX="100.0" endY="-18.20000457763672" layoutX="801.0" layoutY="77.0" startX="100.0" startY="-63.400001525878906" strokeWidth="3.0" />
+            <Line endX="100.0" endY="-18.20000457763672" layoutX="801.0" layoutY="142.0" startX="100.0" startY="-63.400001525878906" strokeWidth="3.0" />
+            <Line endX="190.79998779296875" endY="7.62939453125E-6" layoutX="710.0" layoutY="60.0" startX="-77.19999694824219" startY="7.62939453125E-6" strokeWidth="3.0" />
+            <Line endX="190.79998779296875" endY="7.62939453125E-6" layoutX="710.0" layoutY="126.0" startX="-77.19999694824219" startY="7.62939453125E-6" strokeWidth="3.0" />
+            <Text fill="YELLOW" layoutX="1139.0" layoutY="96.0" stroke="BLACK" strokeType="OUTSIDE" strokeWidth="3.0" text="2P" textAlignment="CENTER" wrappingWidth="111.23798370361328">
+               <font>
+                  <Font name="Berlin Sans FB Demi Bold" size="72.0" />
+               </font>
+            </Text>
+         </children>
+    </AnchorPane>
+  </children>
+</VBox>
